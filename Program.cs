@@ -37,7 +37,7 @@ static void AdoNetDemo() {
     reader.Close();
 
 
-    Console.WriteLine("\n 4. Вывести пары (город, число туров), используя гурппировку (GroupBy, Count):");
+    Console.WriteLine("\n 4. Вывести пары (город, число туров), используя группировку (GroupBy, Count):");
     command.CommandText = "SELECT City, Count(*) as count FROM Tours GROUP BY City";
     reader = command.ExecuteReader();
     while (reader.Read()) {
